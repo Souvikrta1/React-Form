@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,html{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container{
+    max-width:800px;
+    background-color: rgb(159, 51, 51);
+    height: max-content;
+    padding: 1%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container h1{
+    text-align: center;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+form{
+    display: flex;
+    flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form input{
+    height: 30px;
+}
+
+form textarea{
+    height: 100px;
+    overflow: scroll;
+    font-size: large;
+    padding: 1%;
+    margin-bottom: 2%;
+}
+
+form textarea::-webkit-scrollbar{
+    width: 10%;
+}
+
+label{
+    text-align: center;
+    font-size: large;
+    margin-bottom: 1%;
+    margin-top: 1.5%;
+    font-weight: bold;
+    font-family: 'sans-serif';
+    text-decoration: underline;
+}
+
+form button{
+    width: max-content;
+    padding: 0.5% 1.5%;
+    margin-left: 45.8%;
+    font-weight: 700;
 }
